@@ -5,7 +5,7 @@
 CDO Pricing with the C_ng15 copula
 }
 \description{
-'ng15' compute 5 tranches spreads under the C_ng15 copula
+'ng15' computes 5 tranches spreads under the C_ng15 copula.
 }
 \usage{
 ng15(theta1Input, theta2Input, M, dateInput)
@@ -13,16 +13,16 @@ ng15(theta1Input, theta2Input, M, dateInput)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{theta1Input}{
-a numeric giving the Kendall's tau for dependence specification
+a numeric giving the Kendall's tau for dependence specification.
 }
   \item{theta2Input}{
-a numeric giving the Kendall's tau for dependence specification
+a numeric giving the Kendall's tau for dependence specification.
 }
   \item{MInput}{
-a numeric giving the Monte Carlo simulation runs
+a numeric giving the Monte Carlo simulation runs.
 }
   \item{dateInput}{
-a character giving the pricing date, e.g. c("2007-10-23")
+a character giving the pricing date, e.g. c("2007-10-23").
 }
 }
 \details{

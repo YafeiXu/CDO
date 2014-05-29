@@ -5,7 +5,7 @@
 CDO Pricing with the Gaussian copula
 }
 \description{
-'gs' compute 5 tranches spreads under the Gaussian copula
+'gs' computes 5 tranches spreads under the Gaussian copula.
 }
 \usage{
 gs(rhoInput, MInput, dateInput)
@@ -13,13 +13,13 @@ gs(rhoInput, MInput, dateInput)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{rhoInput}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{MInput}{
-a numeric giving the Monte Carlo simulation runs
+a numeric giving the Monte Carlo simulation runs.
 }
   \item{dateInput}{
-a character giving the pricing date, e.g. c("2007-10-23")
+a character giving the pricing date, e.g. c("2007-10-23").
 }
 }
 \details{

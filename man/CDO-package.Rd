@@ -12,11 +12,11 @@ This package includes 43 models, introduced in the master thesis CDO, HAME Copul
 \tabular{ll}{
 Package: \tab CDO\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
+Version: \tab 1.3\cr
 Date: \tab 2014-04-07\cr
 License: \tab GPL (>= 3) \cr
 }
-All 43 models can be found in the master thesis CDO, HAME Copulas and an R Package 'CDO' by Yafei Xu at Humboldt-Universit?t zu Berlin.
+All 43 models can be found in the master thesis CDO, HAME Copulas and an R Package 'CDO' by Yafei Xu at Humboldt-Universit\"at zu Berlin.
 }
 \author{
 Yafei Xu

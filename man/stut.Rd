@@ -5,7 +5,7 @@
 CDO Pricing with the C_t copula
 }
 \description{
-'stut' compute 5 tranches spreads under the C_t copula
+'stut' computes 5 tranches spreads under the C_t copula.
 }
 \usage{
 stut(rhoInput,dF,MInput,dateInput)
@@ -13,16 +13,16 @@ stut(rhoInput,dF,MInput,dateInput)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{rhoInput}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{dF}{
-a numeric giving degree of freedom
+a numeric giving degree of freedom.
 }
   \item{MInput}{
-a numeric giving the Monte Carlo simulation runs
+a numeric giving the Monte Carlo simulation runs.
 }
   \item{dateInput}{
-a character giving the pricing date, e.g. c("2007-10-23")
+a character giving the pricing date, e.g. c("2007-10-23").
 }
 }
 \details{

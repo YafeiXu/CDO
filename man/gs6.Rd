@@ -5,7 +5,7 @@
 CDO Pricing with the C_gs6 Model
 }
 \description{
-'gs6' compute 5 tranches spreads under the C_gs6 Model
+'gs6' computes 5 tranches spreads under the C_gs6 Model.
 }
 \usage{
 gs6(theta1Input, theta2Input, theta3Input, M, dateInput)
@@ -13,16 +13,16 @@ gs6(theta1Input, theta2Input, theta3Input, M, dateInput)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{theta1Input}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{theta2Input}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{theta3Input}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{MInput}{
-a numeric giving the Monte Carlo simulation runs
+a numeric giving the Monte Carlo simulation runs.
 }
   \item{dateInput}{
 a character giving the pricing date, e.g. c("2007-10-23")

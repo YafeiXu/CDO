@@ -5,7 +5,7 @@
 CDO Pricing with the C_tc copula
 }
 \description{
-'mtc' compute 5 tranches spreads under the mixed t-Clayton copula
+'mtc' computes 5 tranches spreads under the mixed t-Clayton copula.
 }
 \usage{
 mtc(theta1Input, theta2Input, weightInput, M, dateInput)
@@ -13,19 +13,19 @@ mtc(theta1Input, theta2Input, weightInput, M, dateInput)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{theta1Input}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{theta2Input}{
-a numeric giving the Kendall's tau for dependence specification
+a numeric giving the Kendall's tau for dependence specification.
 }
   \item{weightInput}{
-a numeric giving the weight for the first component copula
+a numeric giving the weight for the first component copula.
 }
   \item{MInput}{
-a numeric giving the Monte Carlo simulation runs
+a numeric giving the Monte Carlo simulation runs.
 }
   \item{dateInput}{
-a character giving the pricing date, e.g. c("2007-10-23")
+a character giving the pricing date, e.g. c("2007-10-23").
 }
 }
 \details{

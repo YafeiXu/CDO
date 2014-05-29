@@ -5,7 +5,7 @@
 CDO Pricing with the C_t39 copula
 }
 \description{
-'t39' compute 5 tranches spreads under the C_t39 copula
+'t39' computes 5 tranches spreads under the C_t39 copula.
 }
 \usage{
 t39(theta1Input, dF, M, dateInput)
@@ -13,16 +13,16 @@ t39(theta1Input, dF, M, dateInput)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{theta1Input}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{dF}{
-a numeric giving the degree of freedom
+a numeric giving the degree of freedom.
 }
   \item{M}{
-a numeric giving the Monte Carlo simulation runs
+a numeric giving the Monte Carlo simulation runs.
 }
   \item{dateInput}{
-a character giving the pricing date, e.g. c("2007-10-23")
+a character giving the pricing date, e.g. c("2007-10-23").
 }
 }
 \details{

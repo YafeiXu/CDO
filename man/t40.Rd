@@ -5,26 +5,26 @@
 CDO Pricing with the C_t40 copula
 }
 \description{
-'t40' compute 5 tranches spreads under the C_t40 copula
+'t40' computes 5 tranches spreads under the C_t40 copula.
 }
 \usage{
 t40(theta1Input, theta2Input, dF, M, dateInput)
 }
 \arguments{
   \item{theta1Input}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{theta2Input}{
-a numeric giving the Pearson's correlation for dependence specification
+a numeric giving the Pearson's correlation for dependence specification.
 }
   \item{dF}{
-a numeric giving the degree of freedom
+a numeric giving the degree of freedom.
 }
   \item{M}{
-a numeric giving the Monte Carlo simulation runs
+a numeric giving the Monte Carlo simulation runs.
 }
   \item{dateInput}{
-a character giving the pricing date, e.g. c("2007-10-23")
+a character giving the pricing date, e.g. c("2007-10-23").
 }
 }
 \details{
