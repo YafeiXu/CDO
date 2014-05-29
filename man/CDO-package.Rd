@@ -3,7 +3,7 @@
 \alias{CDO}
 \docType{package}
 \title{
-R Codes for CDO Pricing (iTraxx Europe Index Series 8)
+An R Package for CDO Pricing (iTraxx Europe Index Series 8)
 }
 \description{
 This package includes 43 models, introduced in the master thesis CDO, HAME Copulas and an R Package 'CDO', for CDS index tranche pricing under the context of iTraxx Europe Index Series 8.
@@ -16,7 +16,7 @@ Version: \tab 1.3\cr
 Date: \tab 2014-04-07\cr
 License: \tab GPL (>= 3) \cr
 }
-All 43 models can be found in the master thesis CDO, HAME Copulas and an R Package 'CDO' by Yafei Xu at Humboldt-Universit\"at zu Berlin.
+All 43 models can be found in the master thesis CDO, HAME Copulas and an R Package 'CDO' by Yafei Xu at Humboldt-Universitaet zu Berlin.
 }
 \author{
 Yafei Xu
@@ -29,5 +29,10 @@ Maintainer: Yafei Xu <yafei.xu@hu-berlin.de>
 }
 \keyword{ CDO }
 \keyword{ copulas }
+\keyword{ Hierarchical Archimedean Copula }
+\keyword{ Archimedean Copula }
+\keyword{ Mixed Copula }
+\keyword{ Elliptical Copula }
+\keyword{ Mixed Copula }
 \keyword{ iTraxx Europe }
 \keyword{ Credit Risk }
