@@ -1,26 +1,26 @@
 # Package ‘CDO’
 - May 29, 2014
-## Type 
+### Type 
 - Package
-## Title 
+### Title 
 - This package is designed to reproduce the iTraxx Europe Index Series 8 tranche spreads.
-## Version 
+### Version 
 - 1.3
-## Date 
+### Date 
 - 2014-04-07
-## Author 
+### Author 
 - Yafei Xu <yafei.xu@hu-berlin.de>
-## Maintainer 
+### Maintainer 
 - Yafei Xu <yafei.xu@hu-berlin.de>
-## Depends 
+### Depends 
 - copula, matrixcalc, R (>= 3.0.3)
-## Description
-In this package 43 models, containing elliptical copula models, Archimedean copula models, hierarchical Archimedean copula models and mixed copula models, have been employed for pricing the iTraxx Europe Index Series 8 tranche spreads. Details for 43 models and the computations can be referred to the master theisis, CDO, HAME Copulas and an R Package `CDO'. IMPORTANT: This package requires the R >= 3.0.3. And please download the data sets of ``defIntensity.csv'' and ``payday.csv'' from ``https://github.com/YafeiXu/xyfQuantlet'' and correctly install them in such paths: ``C:/defIntensity.csv'', ``C:/payday.csv''.
+### Description
+In this package 43 models, containing elliptical copula models, Archimedean copula models, hierarchical Archimedean copula models and mixed copula models, have been employed for pricing the iTraxx Europe Index Series 8 tranche spreads. Details for 43 models and the computations can be referred to the master theisis, CDO, HAME Copulas and an R Package `CDO'. IMPORTANT: This package requires the R >= 3.0.3. And please download the data sets of defIntensity.csv and ``payday.csv`` from https://github.com/YafeiXu/xyfQuantlet and correctly install them in such paths: C:/defIntensity.csv, C:/payday.csv.
 
 
-## Repository 
+### Repository 
 - https://github.com/YafeiXu/CDO
-## Date/Publication 
+### Date/Publication 
 - 2014-04-07
-## License 
+### License 
 - GPL (>= 3)
