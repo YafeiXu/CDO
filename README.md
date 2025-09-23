@@ -1,5 +1,19 @@
 # R Package ‘CDO’
 - May 29, 2014
+
+### Usage Example
+~~~r
+# install the CDO package:
+
+install.packages("devtools")
+
+library(devtools)
+
+install_github("YafeiXu/cdo")
+
+library(CDO)
+~~~
+
 ### Type 
 - Package
 ### Title 
@@ -30,16 +44,5 @@ In this package 43 models, containing elliptical copula models, Archimedean copu
 ### License 
 - GPL (>= 3)
 
-### Usage Example
-~~~r
-# install the CDO package:
 
-install.packages("devtools")
-
-library(devtools)
-
-install_github("YafeiXu/cdo")
-
-library(CDO)
-~~~
 
