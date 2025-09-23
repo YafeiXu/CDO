@@ -29,3 +29,17 @@ In this package 43 models, containing elliptical copula models, Archimedean copu
 - 2014-04-07
 ### License 
 - GPL (>= 3)
+
+### Usage Example
+~~~r
+# install the CDO package:
+
+install.packages("devtools")
+
+library(devtools)
+
+install_github("YafeiXu/cdo")
+
+library(CDO)
+~~~
+
