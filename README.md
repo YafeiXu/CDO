@@ -17,6 +17,11 @@
 ### Description
 In this package 43 models, containing elliptical copula models, Archimedean copula models, hierarchical Archimedean copula models and mixed copula models, have been employed for pricing the iTraxx Europe Index Series 8 tranche spreads. Details for 43 models and the computations can be referred to the master theisis, CDO, HAME Copulas and an R Package ``CDO``. IMPORTANT: This package requires the R >= 3.0.3. And please download the data sets of ``defIntensity.csv`` and ``payday.csv`` from https://github.com/YafeiXu/xyfQuantlet and correctly install them in such paths: ``C:/defIntensity.csv``, ``C:/payday.csv``.
 
+### Papers
+- Reference Manual: An R Package 'CDO'
+- https://www.researchgate.net/publication/313837768_Reference_Manual_An_R_Package_'CDO'
+- CDO, HAME Copulas and an R Package ‘CDO’
+- https://www.researchgate.net/publication/313748049_CDO_HAME_Copulas_and_an_R_Package_'CDO'
 
 ### Repository 
 - https://github.com/YafeiXu/CDO
