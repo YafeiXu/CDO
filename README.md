@@ -1,4 +1,4 @@
-# Package ‘CDO’
+# R Package ‘CDO’
 - May 29, 2014
 ### Type 
 - Package
