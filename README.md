@@ -1,7 +1,7 @@
 # R Package ‘CDO’
 - May 29, 2014
 
-### Usage Example
+### Install & Use
 ~~~r
 # install the CDO package:
 
