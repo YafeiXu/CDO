@@ -19,9 +19,9 @@ In this package 43 models, containing elliptical copula models, Archimedean copu
 
 ### Papers
 - Reference Manual: An R Package 'CDO'
-- https://www.researchgate.net/publication/313837768_Reference_Manual_An_R_Package_'CDO'
+  - https://www.researchgate.net/publication/313837768_Reference_Manual_An_R_Package_'CDO'
 - CDO, HAME Copulas and an R Package ‘CDO’
-- https://www.researchgate.net/publication/313748049_CDO_HAME_Copulas_and_an_R_Package_'CDO'
+  - https://www.researchgate.net/publication/313748049_CDO_HAME_Copulas_and_an_R_Package_'CDO'
 
 ### Repository 
 - https://github.com/YafeiXu/CDO
