@@ -7,9 +7,9 @@ rho=rhoInput # correlation parameter in copulaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 U=matrix(NA,d,M)
 norm.cop=list()
 tao=matrix(NA,d,M)
-# Settlement Date Éè¶¨¼ÆËãÈÕ
+# Settlement Date è®¾å®šè®¡ç®—æ—¥
 CompDate=list()
-CompDate=as.Date(dateInput) # Éè¶¨¼ÆËãÈÕSettlement Dateeeeeeeeeeeeeeeeeeeeeeeeeeeee
+CompDate=as.Date(dateInput) # è®¾å®šè®¡ç®—æ—¥Settlement Dateeeeeeeeeeeeeeeeeeeeeeeeeeeee
 #lambda=lambdaInput
 lambda=numeric()
 
@@ -24,10 +24,10 @@ BETA=numeric()
 payDay=read.csv("C:/+++++CDODATA/usingDataSet/payday.csv")[,1]
 BETA=numeric()
 
-# Flat Recovery Rate		40% Éè¶¨ËğÊ§»ØÊÕÂÊR
+# Flat Recovery Rate		40% è®¾å®šæŸå¤±å›æ”¶ç‡R
 R=numeric()
 R=0.4#recoveryInput
-# Risk-free interest rate		5.0% Éè¶¨ÎŞ·çÏÕ»Ø±¨ÂÊ
+# Risk-free interest rate		5.0% è®¾å®šæ— é£é™©å›æŠ¥ç‡
 IntRate=numeric()
 IntRate=0.03#intRateInput
 
@@ -40,7 +40,7 @@ IntRate=0.03#intRateInput
 
 
 ################################################################################
-#---check needed packages ¼ì²éÈí¼ş°üÊÇ·ñ°²×°
+#---check needed packages æ£€æŸ¥è½¯ä»¶åŒ…æ˜¯å¦å®‰è£…
 is.installed=list()
 is.installed <- function(mypkg) is.element(mypkg, installed.packages()[,1])
 
@@ -55,37 +55,37 @@ install.packages("matrixcalc")
 library(matrixcalc)}
 
 
-#---1) 2)Compute tao ¼ÆËãÎ¥Ô¼Ê±¼ä
-norm.cop <- normalCopula(rho, dim = d, dispstr = "ex") # ÓÃcopula³éÈ¡Ëæ»úÊı
-#U <- rCopula(M, norm.cop) # Íê³Édefault time¾ØÕó¸³Öµ,³é³ö125¸öËæ»úÊıUi,i=1,...,125
+#---1) 2)Compute tao è®¡ç®—è¿çº¦æ—¶é—´
+norm.cop <- normalCopula(rho, dim = d, dispstr = "ex") # ç”¨copulaæŠ½å–éšæœºæ•°
+#U <- rCopula(M, norm.cop) # å®Œæˆdefault timeçŸ©é˜µèµ‹å€¼,æŠ½å‡º125ä¸ªéšæœºæ•°Ui,i=1,...,125
 #U=t(rCopula(M, norm.cop))
 
 tao=(-1/lambda)*log(t(rCopula(M, norm.cop)))
 
-#---3) 4)Compute Time ÇóTime(term structure)
+#---3) 4)Compute Time æ±‚Time(term structure)
 diffTime=as.numeric(as.Date(payDay)-as.Date(CompDate))
 timeTable=data.frame(as.Date(payDay),diffTime)
 if(timeTable[1,2]<0){timeTable=timeTable[-which(timeTable[,2]<0),]}else{timeTable=timeTable}
 
-Time=timeTable[,1] # term structure Î´À´Êµ¼ÊµÄpayDay
-#Time=as.numeric(as.Date(pa)-as.Date(tStStart # ÖÁÎ´À´¸÷¸¶¿îÆÚpayDayÓëÊ¼·¢ÆÚtStartµÄÊ±¼ä¾àÀë
-TT=length(timeTable[,1]) # TTÎªÎ´À´¸¶¿îÆÚµÄ´ÎÊı
+Time=timeTable[,1] # term structure æœªæ¥å®é™…çš„payDay
+#Time=as.numeric(as.Date(pa)-as.Date(tStStart # è‡³æœªæ¥å„ä»˜æ¬¾æœŸpayDayä¸å§‹å‘æœŸtStartçš„æ—¶é—´è·ç¦»
+TT=length(timeTable[,1]) # TTä¸ºæœªæ¥ä»˜æ¬¾æœŸçš„æ¬¡æ•°
 tPercent=numeric()
-tPercent=cumsum(as.numeric(as.Date(c(CompDate,Time))[-1]-as.Date(c(CompDate,Time))[-length(c(CompDate,Time))])/365)
+tPercent=cumsum(diff(as.Date(c(CompDate,Time)))/365)
 ONE=matrix(NA,125*M,TT)
 
 
 
-#---6) Compute ONE matrix  ÇóONE¾ØÕó
+#---6) Compute ONE matrix  æ±‚ONEçŸ©é˜µ
 taoVector=matrix(NA,125*M,1)
 taoVector=vec(tao)
 ONE=apply(taoVector,1,function(x)as.numeric(x<=tPercent))
 ONE=t(ONE)
 
-#---5) Compute BETA Çóbeta ÕÛÏÖÒò×Ó
+#---5) Compute BETA æ±‚beta æŠ˜ç°å› å­
 BETA=exp(-IntRate*(tPercent))
 
-#---6) L matrix ÇóLt¾ØÕó
+#---6) L matrix æ±‚LtçŸ©é˜µ
 L=matrix(NA,M,TT)
 for(i in 1:M){
    for(j in 1:TT){
@@ -94,7 +94,7 @@ for(i in 1:M){
 }
 L=((1-R)/d)*L
 
-#---7) Lj matrix ÇóLj¾ØÕó
+#---7) Lj matrix æ±‚LjçŸ©é˜µ
 l1=numeric()
 u1=numeric()
 l2=numeric()
